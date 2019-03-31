@@ -17,8 +17,8 @@ mat=[3 7 4 9 9 7;
     5 8 8 8 10 9;
      7 7 8 4 7 8];
  
-%[vectors,values]=comp_pca(Xtrn);
-%[vectors, values,variance,mins]=task1_3(Xtrn);
+[vectors,values]=comp_pca(Xtrn);
+[vectors, values,variance,mins]=task1_3(Xtrn);
 img=mat2gray(toMatrix(vectors(1,:)));
-imshow(img);
+size(vectors(1,:))
 %task1_4(vectors)
