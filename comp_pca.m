@@ -17,7 +17,7 @@ Ds=D(ind,ind);
 Vs=V(:,ind);
 
 EVecs=Vs;
-EVals=Ds;
+EVals=diag(Ds);
 
 end
 

@@ -4,11 +4,10 @@ function [EVecs, EVals, CumVar, MinDims] = task1_3(X)
 
 [EVecs,EVals]=comp_pca(X);
 
-variances=calc_Variances(EVecs);
-CumVar=cumsum(variances);
+CumVar=cumsum(EVals);
 
 MinDims=zeros(4,1);
-total=size(CumVar,2);
+total=size(CumVar,1);
 
 for i=1:total
     if CumVar(i)>=0.7*CumVar(total) && MinDims(1)==0
