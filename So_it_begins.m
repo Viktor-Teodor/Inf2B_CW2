@@ -52,7 +52,14 @@ Ks = [1,2];
 %task1_6(C);
 
 
-Dmap = task1_7(C,M, vectors,values, mean(Xtrn), 200);
+%Dmap = task1_7(C,M, vectors,values, mean(Xtrn), 200);
 %task1_1(Xtrn,Ytrn)
 %silhouette(Xtrn,idx);
 
+%Ks = [1,3,5,10,20];
+%task2_1(Xtrn, Ytrn, Xtst, Ytst, Ks);
+%Ks=[1 2 3 4];
+%[Ypreds] = run_knn_classifier(test_KMeans(1:10,:), [1 1 1 2 2 2 2 2 2 3], test_KMeans(11:14,:), Ks)
+%[Ypreds] = run_knn_classifier(Xtrn,Ytrn, Xtst,[1])
+
+task2_1(test_KMeans(1:10,:), [1 1 1 2 2 2 2 2 2 3], test_KMeans(11:14,:),[3 3 3 3], Ks);
